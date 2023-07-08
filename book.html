@@ -1,0 +1,73 @@
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="table.css">
+    
+    <script>
+        function validate(){
+            var errs=0;
+            var nm=document.fillform.name.value;
+            if(nm==""){
+                document.getElementById("divone").innerHTML="Please enter your name!";
+                errs=1;
+            }
+            var m=document.fillform.mail.value;
+            if(m==""){
+                document.getElementById("divtwo").innerHTML="Please enter a valid email!";
+                errs=1;
+            }
+            else{
+            atr=m.indexOf('@');
+            dot=m.lastIndexOf('.');
+            if(atr<1||(dot-atr)<2){
+                document.getElementById("divtwo").innerHTML="Enter a valid e-mail";
+                errs=1;
+            }
+            }
+            var ph=document.fillform.mbno.value;
+            if(ph==""||ph.length!=10){
+                document.getElementById("divthree").innerHTML="Please enter a valid mobile number";
+                errs=1;
+            }
+            var s=document.fillform.seat.value;
+            if(s==""||s>20||s<1){
+                document.getElementById("divfour").innerHTML="Please choose the number of seats less than 20";
+                errs=1;
+            }
+            if(errs==0){
+                alert("Your seat booking has been confirmed! You shall soon hear from us!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+            <a href="restaurant.html">HOME</a>&nbsp;&nbsp;
+            <a href="abt.html">ABOUT</a>&nbsp;&nbsp;
+            <a href="menu.html">MENU</a>&nbsp;&nbsp;
+            <a href="offer.html">OFFERS TODAY</a>&nbsp;&nbsp;
+            <a href="book.html">BOOK A TABLE</a>&nbsp;&nbsp;
+            <a href="gallery.html">GALLERY</a>
+    </header>
+  <h1>BOOK A TABLE WITH US!</h1>
+    <form id="fillform">
+        <label>Name:<sup>*</sup></label>
+        <input type="text" id="name" class="name"><div id="divone"></div>
+        <br>
+        <label>Email:<sup>*</sup></label>
+        <input type="email" id="mail" class="name"><div id="divtwo"></div>
+        <br>
+        <label>Phone:<sup>*</sup></label>
+        <input type="number" id="mbno" class="mbno"><div id="divthree"></div>
+        <br>
+        <label>Date and Time:<sup>*</sup></label>
+        <input type="datetime-local"><br><br>
+        <label>Seats to be booked:<sup>*</sup></label>
+        <input type="number" id="seat" class="seat"><div id="divfour"></div>
+        <br>
+    </form>
+    <center><div id="btn"><input type="button" class="book" value="BOOK NOW" onclick="validate()"></div></center>
+</body>
+</html>

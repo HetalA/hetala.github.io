@@ -1,0 +1,112 @@
+<html>
+<head>
+    <link rel="stylesheet" href="gall.css">
+    <link rel="stylesheet" href="jquery.flipster.min.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
+    <SCRIPT language="JavaScript1.2">
+        function makevisible(cur,which){
+            strength=(which==0)? 1 : 0.2
+            if (cur.style.MozOpacity)
+                cur.style.MozOpacity=strength
+            else if (cur.filters)
+                cur.filters.alpha.opacity=strength*100
+        }
+    </SCRIPT>
+</head>
+<body>
+        <header>
+            <a href="restaurant.html">HOME</a>&nbsp;&nbsp;
+            <a href="abt.html">ABOUT</a>&nbsp;&nbsp;
+            <a href="menu.html">MENU</a>&nbsp;&nbsp;
+            <a href="offer.html">OFFERS TODAY</a>&nbsp;&nbsp;
+            <a href="celeb.html">CELEBRATE WITH US</a>&nbsp;&nbsp;
+            <a href="gallery.html">GALLERY</a>
+        </header>
+        <h1>GALLERY</h1>
+        <div class="carousel">
+            <figure class="gallery__item gallery__item--1">
+            <img src="img3.jpg" class="gallery__img" alt="Image 1" style="filter:alpha(opacity=20);-moz-opacity:0.2" onMouseover="makevisible(this,0)" onMouseout="makevisible(this,1)">
+            </figure>
+            <figure class="gallery__item gallery__item--2">
+            <img src="img2.jpg" class="gallery__img" alt="Image 2">
+            </figure>
+            <figure class="gallery__item gallery__item--3">
+            <img src="img1.jpg" class="gallery__img" alt="Image 3">
+            </figure>
+            <figure class="gallery__item gallery__item--4">
+            <img src="img4.jpg" class="gallery__img" alt="Image 4">
+            </figure>
+            <figure class="gallery__item gallery__item--5">
+            <img src="img5.jpg" class="gallery__img" alt="Image 5">
+            </figure>
+            <figure class="gallery__item gallery__item--6">
+            <img src="img6.jpg" class="gallery__img" alt="Image 6">
+            </figure>
+    </div>
+    
+    <footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<img src="panda-food.png">
+
+				<p class="footer-links">
+					<a href="#" class="link-1">Home</a>
+					
+					<a href="#">Menu</a>
+				
+					<a href="#">Offers Today</a>
+				
+					<a href="#">About</a>
+					
+					<a href="#">Book A Table</a>
+                    
+                    <a href="#">Gallery</a>
+					
+				</p>
+
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+1.555.555.5555</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@company.com">support@company.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>Connect</span>
+					Connect with us by following us on social media to stay updated.
+				</p>
+
+				<div class="footer-icons">
+
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+
+				</div>
+
+			</div>
+
+		</footer>
+</body>
+</html>

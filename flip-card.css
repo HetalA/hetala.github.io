@@ -1,0 +1,123 @@
+body{
+    background-color: darkslategray;
+}
+
+p{
+    font-family: 'Barlow Semi Condensed'!important;
+}
+
+h1{
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    font-family: 'Barlow Semi Condensed'!important;
+    margin-bottom: 0;
+}
+
+header {
+    color: white;
+    line-height: 20px;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+}
+header a{
+    color: white;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.flip{
+    background-color: transparent;
+    width: 320px;
+    height: 220px;
+    perspective: 1000px;
+    border-radius: 25px;
+    float: left;
+    margin: 25px;
+}
+
+.flip-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip:hover .flip-inner{
+    transform: rotateY(180deg);
+}
+
+.flip-front, .flip-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-front{
+    background-color: chartreuse;
+    color: black;
+}
+
+.flip-back{
+    background-color: chartreuse;
+    color: black;
+    transform: rotateY(180deg);
+}
+
+.flip-front-two, .flip-back-two{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-front-two{
+    background-color: dodgerblue;
+    color: black;
+}
+
+.flip-back-two{
+    background-color: dodgerblue;
+    color: black;
+    transform: rotateY(180deg);
+}
+
+table{
+    margin: 10px;
+    padding: 15px;
+}
+
+td, th{
+    padding-left: 30px;
+}
+
+img{
+    margin-top: 10px;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    background-color: black;
+    margin: 15px;
+    height: 40px;
+    width: 100%;
+    bottom: 0px;
+}
+
+.c {
+	height: 200vh;
+	width: 960px;
+	margin: auto;
+	max-width: 95%;
+
+}
+

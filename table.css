@@ -1,0 +1,62 @@
+body{
+    background-color: darkslategray;
+    font-family: 'Barlow Semi Condensed'!important;
+}
+
+p{
+    font-family: 'Barlow Semi Condensed'!important;
+}
+
+h1{
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    font-family: 'Barlow Semi Condensed'!important;
+}
+header {
+    color: white;
+     line-height: 20px;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+}
+header a{
+    color: white;
+    text-decoration: none;
+    vertical-align: middle;
+    font-family: serif;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+label{
+    color: white;
+}
+
+sup{
+    color: white;
+    font-weight: bold;
+}
+
+form{
+    text-align: center;
+}
+
+.book{
+    border: 4px solid white;
+    color: white;
+    background-color: darkslategray;
+    text-align: center;
+    height: 35px;
+    font-family: 'Barlow Semi Condensed';
+    font-size: 15px;
+    padding: 5px;
+}
+
+#btn :hover{
+    color: darkslategray;
+    background-color: white;
+    
+}
